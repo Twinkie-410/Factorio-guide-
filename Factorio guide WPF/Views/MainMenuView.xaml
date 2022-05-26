@@ -9,12 +9,9 @@
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Content="Рецепты" Command="{Binding NavigateRecipesCommand}"/>
-            <Button Content="Лайфхаки" />
-            <Button Content="Гайды" />
-            <Button Content="Часто задаваемые вопросы" />
+            <Button Content="Лайфхаки" Command="{Binding NavigateLiveHackCommand}"/>
+            <Button Content="Гайды" Command="{Binding NavigateGuideCommand}"/>
+            <Button Content="Часто задаваемые вопросы" Command="{Binding NavigateFaqCommand}"/>
         </StackPanel>
-        <Grid HorizontalAlignment="Right" VerticalAlignment="Top">
-            <Button Content="close"/>
-        </Grid>
     </Grid>
 </UserControl>

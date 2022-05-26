@@ -8,4 +8,38 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Page Update="Views\LogisticsView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <DependentUpon>RecipesView.xaml</DependentUpon>
+      </Page>
+      <Page Update="Views\ProductionView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <DependentUpon>RecipesView.xaml</DependentUpon>
+      </Page>
+      <Page Update="Views\IntermediateProductsView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <DependentUpon>RecipesView.xaml</DependentUpon>
+      </Page>
+      <Page Update="Views\CombatView.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <DependentUpon>RecipesView.xaml</DependentUpon>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="ViewModels\LogisticViewModel.cs">
+        <DependentUpon>RecipesViewModel.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ViewModels\ProductionViewModel.cs">
+        <DependentUpon>RecipesViewModel.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ViewModels\IntermediateProductsViewModel.cs">
+        <DependentUpon>RecipesViewModel.cs</DependentUpon>
+      </Compile>
+      <Compile Update="ViewModels\CombatViewModel.cs">
+        <DependentUpon>RecipesViewModel.cs</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
 </Project>
