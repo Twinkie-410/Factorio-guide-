@@ -16,17 +16,17 @@ namespace Factorio_guide_WPF
     /// </summary>
     public partial class App : Application
     {
-        // protected override void OnStartup(StartupEventArgs e)
-        // {
-        //     var navigationStore = new NavigationStore();
-        //     navigationStore.CurrentViewModel = new MainMenuViewModel(navigationStore);
-        //     MainWindow = new MainWindow()
-        //     {
-        //         DataContext = new MainViewModel(navigationStore)
-        //     };
-        //     MainWindow.Show();
-        //     
-        //     base.OnStartup(e);
-        // }
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            var navigationStore = new NavigationStore();
+            navigationStore.CurrentViewModel = new MainMenuViewModel(navigationStore);
+            MainWindow = new MainWindow()
+            {
+                DataContext = new MainViewModel(navigationStore)
+            };
+            MainWindow.Show();
+            
+            base.OnStartup(e);
+        }
     }
 }
