@@ -11,12 +11,12 @@ namespace Factorio_guide_WPF.ViewModels
         public ICommand NavigateGuideCommand { get; }
         public ICommand NavigateFaqCommand { get; }
 
-        public MainMenuViewModel(NavigationStore navigationStore)
+        public MainMenuViewModel(NavigationStore navigationStore, EntityStore entityStore)
         {
-            NavigateRecipesCommand = new NavigateCommand<RecipesViewModel>(navigationStore, () => new RecipesViewModel(navigationStore));
-            NavigateLiveHackCommand = new NavigateCommand<LiveHackViewModel>(navigationStore, () => new LiveHackViewModel(navigationStore));
-            NavigateGuideCommand = new NavigateCommand<GuideViewModel>(navigationStore, () => new GuideViewModel(navigationStore));
-            NavigateFaqCommand = new NavigateCommand<FAGViewModel>(navigationStore, () => new FAGViewModel(navigationStore));
+            NavigateRecipesCommand = new NavigateCommand<RecipesViewModel>(navigationStore, () => new RecipesViewModel(navigationStore, entityStore));
+            NavigateLiveHackCommand = new NavigateCommand<LiveHackViewModel>(navigationStore, () => new LiveHackViewModel(navigationStore, entityStore));
+            NavigateGuideCommand = new NavigateCommand<GuideViewModel>(navigationStore, () => new GuideViewModel(navigationStore, entityStore));
+            NavigateFaqCommand = new NavigateCommand<FAGViewModel>(navigationStore, () => new FAGViewModel(navigationStore, entityStore));
         }
     }
 }

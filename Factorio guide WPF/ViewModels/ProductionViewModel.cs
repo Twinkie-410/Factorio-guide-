@@ -9,9 +9,9 @@ namespace Factorio_guide_WPF.ViewModels
         public ICommand NavigateRecipesCommand { get; }
         
 
-        public ProductionViewModel(NavigationStore navigationStore)
+        public ProductionViewModel(NavigationStore navigationStore, EntityStore entityStore)
         {
-            NavigateRecipesCommand = new NavigateCommand<RecipesViewModel>(navigationStore, () => new RecipesViewModel(navigationStore)); 
+            NavigateRecipesCommand = new NavigateCommand<RecipesViewModel>(navigationStore, () => new RecipesViewModel(navigationStore, entityStore)); 
         }
     }
 }

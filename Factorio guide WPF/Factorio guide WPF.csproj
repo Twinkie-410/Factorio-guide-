@@ -25,6 +25,10 @@
         <Generator>MSBuild:Compile</Generator>
         <DependentUpon>RecipesView.xaml</DependentUpon>
       </Page>
+      <Page Update="Views\Entity.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <DependentUpon>RecipesView.xaml</DependentUpon>
+      </Page>
     </ItemGroup>
 
     <ItemGroup>
