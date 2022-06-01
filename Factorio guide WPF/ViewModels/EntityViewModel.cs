@@ -10,10 +10,10 @@ namespace Factorio_guide_WPF.ViewModels
         public Entity Entity { get; }
         public ICommand NavigateLogisticCommand { get; }
 
-        public EntityViewModel(NavigationStore navigationStore, Entity entity, EntityStore entityStore)
+        public EntityViewModel(NavigationStore navigationStore, Entity entity)
         {
             NavigateLogisticCommand =
-                new NavigateCommand<LogisticViewModel>(navigationStore, () => new LogisticViewModel(navigationStore, entityStore));
+                new NavigateCommand<LogisticViewModel>(navigationStore, () => new LogisticViewModel(navigationStore));
             Entity = entity;
         }
     }

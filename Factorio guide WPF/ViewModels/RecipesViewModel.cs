@@ -13,16 +13,16 @@ namespace Factorio_guide_WPF.ViewModels
         public ICommand NavigateIntermediateProductsCommand { get; }
         public ICommand NavigateCombatCommand { get; }
 
-        public RecipesViewModel(NavigationStore navigationStore, EntityStore entityStore)
+        public RecipesViewModel(NavigationStore navigationStore)
         {
-            NavigateMainMenuCommand = new NavigateCommand<MainMenuViewModel>(navigationStore, () => new MainMenuViewModel(navigationStore, entityStore));
-            NavigateLogisticCommand = new NavigateCommand<LogisticViewModel>(navigationStore, () => new LogisticViewModel(navigationStore, entityStore));
+            NavigateMainMenuCommand = new NavigateCommand<MainMenuViewModel>(navigationStore, () => new MainMenuViewModel(navigationStore));
+            NavigateLogisticCommand = new NavigateCommand<LogisticViewModel>(navigationStore, () => new LogisticViewModel(navigationStore));
             NavigateProductionCommand = new NavigateCommand<ProductionViewModel>(navigationStore,
-                () => new ProductionViewModel(navigationStore, entityStore));
+                () => new ProductionViewModel(navigationStore));
             NavigateIntermediateProductsCommand = new NavigateCommand<IntermediateProductsViewModel>(navigationStore,
-                () => new IntermediateProductsViewModel(navigationStore, entityStore));
+                () => new IntermediateProductsViewModel(navigationStore));
             NavigateCombatCommand =
-                new NavigateCommand<CombatViewModel>(navigationStore, () => new CombatViewModel(navigationStore, entityStore));
+                new NavigateCommand<CombatViewModel>(navigationStore, () => new CombatViewModel(navigationStore));
         }
     }
 }

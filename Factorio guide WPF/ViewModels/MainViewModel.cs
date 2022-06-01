@@ -7,7 +7,7 @@ namespace Factorio_guide_WPF.ViewModels
         private readonly NavigationStore navigationStore;
         public ViewModelBase CurrentViewModel => navigationStore.CurrentViewModel;
 
-        public MainViewModel(NavigationStore navigationStore, EntityStore entityStore)
+        public MainViewModel(NavigationStore navigationStore)
         {
             this.navigationStore = navigationStore;
             navigationStore.CurrentViewModelChanged += OnCurrentViewModelChanged;

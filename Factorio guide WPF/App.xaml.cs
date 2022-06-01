@@ -19,11 +19,11 @@ namespace Factorio_guide_WPF
         protected override void OnStartup(StartupEventArgs e)
         {
             var navigationStore = new NavigationStore();
-            var entityStore = new EntityStore();
-            navigationStore.CurrentViewModel = new MainMenuViewModel(navigationStore, entityStore);
+            //var entityStore = new EntityStore();
+            navigationStore.CurrentViewModel = new MainMenuViewModel(navigationStore);
             MainWindow = new MainWindow()
             {
-                DataContext = new MainViewModel(navigationStore, entityStore)
+                DataContext = new MainViewModel(navigationStore)
             };
             MainWindow.Show();
             

@@ -16,16 +16,16 @@ namespace Factorio_guide_WPF.ViewModels
         public ICommand NavigateStorageTank { get; }
         #endregion
 
-        public LogisticViewModel(NavigationStore navigationStore, EntityStore entityStore)
+        public LogisticViewModel(NavigationStore navigationStore)
         {
-            NavigateRecipesCommand = new NavigateCommand<RecipesViewModel>(navigationStore, () => new RecipesViewModel(navigationStore, entityStore));
-            CreateNavigateEntityCommand(navigationStore, entityStore);
+            NavigateRecipesCommand = new NavigateCommand<RecipesViewModel>(navigationStore, () => new RecipesViewModel(navigationStore));
+            CreateNavigateEntityCommand(navigationStore);
         }
 
-        private void CreateNavigateEntityCommand(NavigationStore navigationStore, EntityStore entityStore)
+        private void CreateNavigateEntityCommand(NavigationStore navigationStore)
         {
             NavigateWoodenChest = new NavigateCommand<EntityViewModel>(navigationStore,
-                () => new EntityViewModel(navigationStore, new Entity("Wooden Chest"), entityStore));
+                () => new EntityViewModel(navigationStore, new Entity("Wooden Chest")));
         }
     }
 }
