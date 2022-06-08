@@ -32,6 +32,11 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Compile Update="ResourceArticle.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>ResourceArticle.resx</DependentUpon>
+      </Compile>
       <Compile Update="ViewModels\LogisticViewModel.cs">
         <DependentUpon>RecipesViewModel.cs</DependentUpon>
       </Compile>
@@ -44,6 +49,22 @@
       <Compile Update="ViewModels\CombatViewModel.cs">
         <DependentUpon>RecipesViewModel.cs</DependentUpon>
       </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="ResourceArticle.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>ResourceArticle.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\Article\Тестовая статья\RG.png" />
+      <Resource Include="Resources\Article\Тестовая статья\RG.png" />
+      <None Remove="Resources\Article\Тестовая статья\Leaf.jpg" />
+      <Resource Include="Resources\Article\Тестовая статья\Leaf.jpg" />
+      <None Remove="Resources\Article\Тестовая статья\Рисунок2.png" />
+      <Resource Include="Resources\Article\Тестовая статья\Рисунок2.png" />
     </ItemGroup>
 
 </Project>

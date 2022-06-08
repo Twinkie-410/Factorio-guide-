@@ -1,4 +1,9 @@
-﻿using System.Windows.Input;
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Windows.Input;
+using System.Windows.Media.Imaging;
+using Factorio_guide__WPF.Guide;
 using Factorio_guide_WPF.Commands;
 using Factorio_guide_WPF.Stores;
 
@@ -6,11 +11,26 @@ namespace Factorio_guide_WPF.ViewModels
 {
     public class GuideViewModel : ViewModelBase
     {
+        public List<Article> Guide { get; set; }
         public ICommand NavigateMainMenuCommand { get; }
 
         public GuideViewModel(NavigationStore navigationStore)
         {
-            NavigateMainMenuCommand = new NavigateCommand<MainMenuViewModel>(navigationStore, () => new MainMenuViewModel(navigationStore)); 
+            NavigateMainMenuCommand = new NavigateCommand<MainMenuViewModel>(navigationStore, () => new MainMenuViewModel(navigationStore));
+            CreateArticle();
+        }
+
+        private void CreateArticle()
+        {
+            var articles = new List<Article>();
+            var path = @"..\Resources\Article\Тестовая статья\";
+            var testArticle_images = new List<BitmapImage>
+                {new BitmapImage(new Uri($"{path}RG.png", UriKind.Relative))};
+            var stream = new StreamReader($@"..\..\{path}Тестовая статья.txt");
+            var article = new Article(stream, testArticle_images);
+            articles.Add(article);
+
+            Guide = articles;
         }
     }
 }
