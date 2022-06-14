@@ -5,6 +5,7 @@ using System.Windows.Input;
 using Factorio_guide__WPF;
 using Factorio_guide_WPF.Commands;
 using Factorio_guide_WPF.Stores;
+using Factorio_guide_WPF.ViewModels.RecipeCategories.LogisticsCategories.StorageTypes;
 
 namespace Factorio_guide_WPF.ViewModels
 {
@@ -28,8 +29,8 @@ namespace Factorio_guide_WPF.ViewModels
         private void CreateNavigateEntityCommand(NavigationStore navigationStore)
         {
             var logisticEntity = CreateLogisticEntity();
-            NavigateWoodenChest = new NavigateCommand<EntityViewModel>(navigationStore,
-                () => new EntityViewModel(navigationStore, logisticEntity["Деревянный сундук"]));
+            NavigateWoodenChest = new NavigateCommand<WoodenChestVM>(navigationStore,
+                () => new WoodenChestVM(navigationStore));
             NavigateIronChest = new NavigateCommand<EntityViewModel>(navigationStore,
                 () => new EntityViewModel(navigationStore, logisticEntity["Железный сундук"]));
             NavigateSteelChest = new NavigateCommand<EntityViewModel>(navigationStore,

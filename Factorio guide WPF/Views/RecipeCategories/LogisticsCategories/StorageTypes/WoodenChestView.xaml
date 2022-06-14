@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="Factorio_guide_WPF.Views.RecipeCategories.LogisticsCategories.StorageTypes.WoodenChestView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Factorio_guide_WPF.Views.RecipeCategories.LogisticsCategories.StorageTypes"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <Button DockPanel.Dock="Left" Command="{Binding NavigateLogisticCommand}">Назад</Button>
+            <Label HorizontalAlignment="Center">Деревянный ящик</Label>
+        </DockPanel>
+        <ScrollViewer>
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="7*" />
+                        <ColumnDefinition Width="3*" />
+                    </Grid.ColumnDefinitions>
+
+                    <TextBlock Grid.Column="0" Margin="5" Padding="5" TextWrapping="WrapWithOverflow"
+                               Text="{Binding GetDescription}" />
+                    <StackPanel Grid.Column="1" Margin="3">
+                        <Image Source="\Resources/Storeage images/Wooden_chest_entity.png" />
+                        <Label>Затраты</Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Gray" Margin="2">
+                                <Image Width="48" Source="\Resources/Product icons/Time.png"></Image>
+                                <Label VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="0" FontSize="18"
+                                       Foreground="White">
+                                    0.5
+                                </Label>
+                            </Grid>
+                            <Grid Background="Gray" Margin="2">
+                                <Image Source="\Resources\Product icons/48px-Wood.png"></Image>
+                                <Label VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="0" FontSize="18"
+                                       Foreground="White">
+                                    2
+                                </Label>
+                            </Grid>
+                        </StackPanel>
+                        <Label>Всего ресурсов</Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Gray" Margin="2">
+                                <Image Width="48" Source="\Resources/Product icons/Time.png"></Image>
+                                <Label VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="0" FontSize="18"
+                                       Foreground="White">
+                                    0.5
+                                </Label>
+                            </Grid>
+                            <Grid Background="Gray" Margin="2">
+                                <Image Source="\Resources\Product icons/48px-Wood.png"></Image>
+                                <Label VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="0" FontSize="18"
+                                       Foreground="White">
+                                    2
+                                </Label>
+                            </Grid>
+                        </StackPanel>
+                        <DockPanel>
+                            <Label DockPanel.Dock="Left">Размер харнилища</Label>
+                            <Label HorizontalAlignment="Right">16</Label>
+                        </DockPanel>
+                        <DockPanel>
+                            <Label DockPanel.Dock="Left">Здоровье</Label>
+                            <Label HorizontalAlignment="Right">100</Label>
+                        </DockPanel>
+                        <DockPanel>
+                            <Label DockPanel.Dock="Left">Размер стопки</Label>
+                            <Label HorizontalAlignment="Right">50</Label>
+                        </DockPanel>
+                        <DockPanel>
+                            <Label DockPanel.Dock="Left">Размер харнилища</Label>
+                            <Label HorizontalAlignment="Right">16</Label>
+                        </DockPanel>
+
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </DockPanel>
+</UserControl>

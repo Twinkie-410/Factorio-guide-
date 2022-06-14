@@ -13,7 +13,7 @@
         </Grid>
         <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel>
-                <Image Width="400" Height="400" Source="{Binding Guide[0].GetImage}"/>
+                <Image Source="{Binding Guide[0].GetImage}"/>
                 <TextBlock Text="{Binding Guide[0].GetText}" TextWrapping="WrapWithOverflow"/>
             </StackPanel>
         </Grid>

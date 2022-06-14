@@ -9,22 +9,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Page Update="Views\LogisticsView.xaml">
-        <Generator>MSBuild:Compile</Generator>
-        <DependentUpon>RecipesView.xaml</DependentUpon>
-      </Page>
-      <Page Update="Views\ProductionView.xaml">
-        <Generator>MSBuild:Compile</Generator>
-        <DependentUpon>RecipesView.xaml</DependentUpon>
-      </Page>
-      <Page Update="Views\IntermediateProductsView.xaml">
-        <Generator>MSBuild:Compile</Generator>
-        <DependentUpon>RecipesView.xaml</DependentUpon>
-      </Page>
-      <Page Update="Views\CombatView.xaml">
-        <Generator>MSBuild:Compile</Generator>
-        <DependentUpon>RecipesView.xaml</DependentUpon>
-      </Page>
       <Page Update="Views\Entity.xaml">
         <Generator>MSBuild:Compile</Generator>
         <DependentUpon>RecipesView.xaml</DependentUpon>
@@ -36,18 +20,6 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>ResourceArticle.resx</DependentUpon>
-      </Compile>
-      <Compile Update="ViewModels\LogisticViewModel.cs">
-        <DependentUpon>RecipesViewModel.cs</DependentUpon>
-      </Compile>
-      <Compile Update="ViewModels\ProductionViewModel.cs">
-        <DependentUpon>RecipesViewModel.cs</DependentUpon>
-      </Compile>
-      <Compile Update="ViewModels\IntermediateProductsViewModel.cs">
-        <DependentUpon>RecipesViewModel.cs</DependentUpon>
-      </Compile>
-      <Compile Update="ViewModels\CombatViewModel.cs">
-        <DependentUpon>RecipesViewModel.cs</DependentUpon>
       </Compile>
     </ItemGroup>
 
@@ -65,6 +37,30 @@
       <Resource Include="Resources\Article\Тестовая статья\Leaf.jpg" />
       <None Remove="Resources\Article\Тестовая статья\Рисунок2.png" />
       <Resource Include="Resources\Article\Тестовая статья\Рисунок2.png" />
+      <None Remove="Resources\Storeage images\Steel_chest_entity.png" />
+      <None Remove="Resources\Storeage images\Iron_chest_entity.png" />
+      <None Remove="Resources\Storeage images\Storage_tank_entity.png" />
+      <Resource Include="Resources\Storeage images\Iron_chest_entity.png" />
+      <Resource Include="Resources\Storeage images\Steel_chest_entity.png" />
+      <None Remove="Resources\Storeage images\Wooden_chest_entity.png" />
+      <Resource Include="Resources\Storeage images\Storage_tank_entity.png" />
+      <Resource Include="Resources\Storeage images\Wooden_chest_entity.png" />
+      <None Remove="Resources\Logistics icons\48px-Iron_chest.png" />
+      <Resource Include="Resources\Logistics icons\48px-Iron_chest.png" />
+      <None Remove="Resources\Logistics icons\48px-Wooden_chest.png" />
+      <Resource Include="Resources\Logistics icons\48px-Wooden_chest.png" />
+      <None Remove="Resources\Logistics icons\48px-Steel_chest.png" />
+      <Resource Include="Resources\Logistics icons\48px-Steel_chest.png" />
+      <None Remove="Resources\Product icons\48px-Wood.png" />
+      <Resource Include="Resources\Product icons\48px-Wood.png" />
+      <None Remove="Resources\Logistics icons\48px-Storage_tank.png" />
+      <Resource Include="Resources\Logistics icons\48px-Storage_tank.png" />
+      <None Remove="Resources\Product icons\Time.png" />
+      <Resource Include="Resources\Product icons\Time.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Resources\Product icons" />
     </ItemGroup>
 
 </Project>

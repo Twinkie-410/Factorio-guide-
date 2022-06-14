@@ -11,9 +11,8 @@ namespace Factorio_guide__WPF.Guide
 {
     public class Article
     {
+        public string Title { get; set; }
         private StreamReader Content;
-
-
         private List<BitmapImage> Images;
 
         public string GetText
@@ -26,10 +25,11 @@ namespace Factorio_guide__WPF.Guide
             get =>  Images[0];
         }
         
-        public Article(StreamReader content, List<BitmapImage> images)
+        public Article(StreamReader content, List<BitmapImage> images, string title = null)
         {
             Content = content;
-            this.Images = images;
+            Images = images;
+            Title = title;
         }
 
         private string StreamToText()
