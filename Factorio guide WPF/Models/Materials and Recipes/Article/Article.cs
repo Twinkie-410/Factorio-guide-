@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Net.Mime;
-using System.Runtime.CompilerServices;
-using System.Windows.Controls;
 using System.Windows.Media.Imaging;
-using Factorio_guide_WPF;
 
-namespace Factorio_guide__WPF.Guide
+namespace Factorio_guide_WPF.Models.Materials_and_Recipes.Article
 {
     public class Article
     {
@@ -20,9 +15,9 @@ namespace Factorio_guide__WPF.Guide
             get => StreamToText();
         }
         
-        public BitmapImage GetImage
+        public List<BitmapImage> GetImage
         {
-            get =>  Images[0];
+            get =>  Images;
         }
         
         public Article(StreamReader content, List<BitmapImage> images, string title = null)
