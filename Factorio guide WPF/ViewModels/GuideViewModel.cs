@@ -27,9 +27,11 @@ namespace Factorio_guide_WPF.ViewModels
             var testArticle_images = new List<BitmapImage>
                 {new BitmapImage(new Uri($"{path}RG.png", UriKind.Relative))};
             var stream = new StreamReader($@"..\..\{path}Тестовая статья.txt");
+            var testArticle_images1 = new List<BitmapImage>
+                {new BitmapImage(new Uri($"{path}RG.png", UriKind.Relative)), new BitmapImage(new Uri($"{path}Leaf.jpg", UriKind.Relative))};
             var stream1 = new StreamReader($@"..\..\{path}Тестовая статья.txt");
             var article = new Article(stream, testArticle_images) {Title = "статья1"};
-            var article1 = new Article(stream1, testArticle_images) {Title = "статья2"};
+            var article1 = new Article(stream1, testArticle_images1) {Title = "статья2"};
             articles.Add(article);
             articles.Add(article1);
 

@@ -24,7 +24,7 @@ namespace Factorio_guide_WPF.Models.Materials_and_Recipes.Article
         {
             Content = content;
             Images = images;
-            Title = title;
+            Title = content.ReadLine();
         }
 
         private string StreamToText()
