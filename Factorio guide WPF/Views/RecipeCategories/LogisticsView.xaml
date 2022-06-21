@@ -41,15 +41,15 @@
             <Button Grid.Row="1" Grid.Column="2" Command="{Binding NavigateSteelChest}"/>
             <Button Grid.Row="1" Grid.Column="3" Command="{Binding NavigateStorageTank}"/>
 
-            <Button Grid.Row="2" Grid.Column="0" />
-            <Button Grid.Row="2" Grid.Column="1" />
-            <Button Grid.Row="2" Grid.Column="2" />
-            <Button Grid.Row="2" Grid.Column="3" />
-            <Button Grid.Row="2" Grid.Column="4" />
-            <Button Grid.Row="2" Grid.Column="5" />
-            <Button Grid.Row="2" Grid.Column="6" />
-            <Button Grid.Row="2" Grid.Column="7" />
-            <Button Grid.Row="2" Grid.Column="8" />
+            <Button Grid.Row="2" Grid.Column="0" Command="{Binding NavigateTransportBelt}"/>
+            <Button Grid.Row="2" Grid.Column="1" Command="{Binding NavigateFastTransportBelt}"/>
+            <Button Grid.Row="2" Grid.Column="2" Command="{Binding NavigateExpressTransportBelt}"/>
+            <Button Grid.Row="2" Grid.Column="3" Command="{Binding NavigateUndergroundBelt}"/>
+            <Button Grid.Row="2" Grid.Column="4" Command="{Binding NavigateFastUndergroundBelt}"/>
+            <Button Grid.Row="2" Grid.Column="5" Command="{Binding NavigateExpressUndergroundBelt}"/>
+            <Button Grid.Row="2" Grid.Column="6" Command="{Binding NavigateSplitter}"/>
+            <Button Grid.Row="2" Grid.Column="7" Command="{Binding NavigateFastSplitter}"/>
+            <Button Grid.Row="2" Grid.Column="8" Command="{Binding NavigateExpressSplitter}"/>
 
             <Button Grid.Row="3" Grid.Column="0" />
             <Button Grid.Row="3" Grid.Column="1" />

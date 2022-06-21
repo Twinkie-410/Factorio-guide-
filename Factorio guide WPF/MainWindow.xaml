@@ -7,7 +7,9 @@
         xmlns:views="clr-namespace:Factorio_guide_WPF.Views"
         xmlns:vm="clr-namespace:Factorio_guide_WPF.ViewModels"
         xmlns:storageTypes="clr-namespace:Factorio_guide_WPF.Views.RecipeCategories.LogisticsCategories.StorageTypes"
-        xmlns:vm1="clr-namespace:Factorio_guide_WPF.ViewModels.RecipeCategories.LogisticsCategories.StorageTypes"
+        xmlns:beltTypes="clr-namespace:Factorio_guide_WPF.Views.RecipeCategories.LogisticsCategories.Belt_transport_system"
+        xmlns:vmStorage="clr-namespace:Factorio_guide_WPF.ViewModels.RecipeCategories.LogisticsCategories.StorageTypes"
+        xmlns:vmBelt="clr-namespace:Factorio_guide_WPF.ViewModels.RecipeCategories.LogisticsCategories.TransportSystemsTypes"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -30,9 +32,50 @@
             <DataTemplate DataType="{x:Type vm:LogisticViewModel}">
                 <views:logisticsView />
             </DataTemplate>
-            <DataTemplate DataType="{x:Type vm1:WoodenChestVM}">
+            
+            <DataTemplate DataType="{x:Type vmStorage:WoodenChestVM}">
                 <storageTypes:WoodenChestView/>
             </DataTemplate>
+            <DataTemplate DataType="{x:Type vmStorage:IronChestVM}">
+                <storageTypes:IronChestView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vmStorage:SteelChestVM}">
+                <storageTypes:SteelChestView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vmStorage:StorageTankVM}">
+                <storageTypes:StorageTankView/>
+            </DataTemplate>
+            
+            <DataTemplate DataType="{x:Type vmBelt:SplitterVM}">
+                <beltTypes:Splitter/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vmBelt:ExpressSplitterVM}">
+                <beltTypes:ExpressSplitter/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vmBelt:FastSplitterVM}">
+                <beltTypes:FastSplitter/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vmBelt:TransportBeltVM}">
+                <beltTypes:TransportBelt/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vmBelt:UndergroundBeltVM}">
+                <beltTypes:UndergroundBelt/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vmBelt:ExpressTransportBeltVM}">
+                <beltTypes:ExpressTransportBelt/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vmBelt:ExpressUndergroundBeltVM}">
+                <beltTypes:ExpressUndergroundBelt/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vmBelt:FastTransportBeltVM}">
+                <beltTypes:FastTransportBelt/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vmBelt:FastUndergroundBeltVM}">
+                <beltTypes:FastUndergroundBelt/>
+            </DataTemplate>
+
+            
+            
             <DataTemplate DataType="{x:Type vm:ProductionViewModel}">
                 <views:ProductionView />
             </DataTemplate>

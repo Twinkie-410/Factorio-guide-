@@ -6,6 +6,8 @@ using Factorio_guide__WPF;
 using Factorio_guide_WPF.Commands;
 using Factorio_guide_WPF.Stores;
 using Factorio_guide_WPF.ViewModels.RecipeCategories.LogisticsCategories.StorageTypes;
+using Factorio_guide_WPF.ViewModels.RecipeCategories.LogisticsCategories.TransportSystemsTypes;
+using Factorio_guide_WPF.Views.RecipeCategories.LogisticsCategories.Belt_transport_system;
 
 namespace Factorio_guide_WPF.ViewModels
 {
@@ -14,72 +16,92 @@ namespace Factorio_guide_WPF.ViewModels
         public ICommand NavigateRecipesCommand { get; }
 
         #region NavigateEntityCommand
+
+        #region LogisticEntityCommand
+
+        #region StorageEntityCommand
+
         public ICommand NavigateWoodenChest { get; private set; }
         public ICommand NavigateIronChest { get; private set; }
         public ICommand NavigateSteelChest { get; private set; }
         public ICommand NavigateStorageTank { get; private set; }
+
+        #endregion
+
+        #region BeltTransportSustemsCommand
+
+        public ICommand NavigateTransportBelt { get; private set; }
+        public ICommand NavigateFastTransportBelt { get; private set; }
+        public ICommand NavigateExpressTransportBelt { get; private set; }
+        public ICommand NavigateUndergroundBelt { get; private set; }
+        public ICommand NavigateFastUndergroundBelt { get; private set; }
+        public ICommand NavigateExpressUndergroundBelt { get; private set; }
+        public ICommand NavigateSplitter { get; private set; }
+        public ICommand NavigateFastSplitter { get; private set; }
+        public ICommand NavigateExpressSplitter { get; private set; }
+
+        #endregion
+        #endregion
+
         #endregion
 
         public LogisticViewModel(NavigationStore navigationStore)
         {
-            NavigateRecipesCommand = new NavigateCommand<RecipesViewModel>(navigationStore, () => new RecipesViewModel(navigationStore));
+            NavigateRecipesCommand =
+                new NavigateCommand<RecipesViewModel>(navigationStore, () => new RecipesViewModel(navigationStore));
             CreateNavigateEntityCommand(navigationStore);
         }
 
         private void CreateNavigateEntityCommand(NavigationStore navigationStore)
         {
-            var logisticEntity = CreateLogisticEntity();
+            CreateLogisticEntity(navigationStore);
+        }
+
+        private void CreateLogisticEntity(NavigationStore navigationStore)
+        {
+            CreateStores(navigationStore);
+            CreateBeltTransportSystems(navigationStore);
+            CreateInserters(navigationStore);
+        }
+
+        private void CreateInserters(NavigationStore navigationStore)
+        {
+            
+        }
+
+        private void CreateBeltTransportSystems(NavigationStore navigationStore)
+        {
+            NavigateTransportBelt = new NavigateCommand<TransportBeltVM>(navigationStore,
+                () => new TransportBeltVM(navigationStore));
+            NavigateFastTransportBelt = new NavigateCommand<FastTransportBeltVM>(navigationStore,
+                () => new FastTransportBeltVM(navigationStore));
+            NavigateExpressTransportBelt = new NavigateCommand<ExpressTransportBeltVM>(navigationStore,
+                () => new ExpressTransportBeltVM(navigationStore));
+            NavigateUndergroundBelt = new NavigateCommand<UndergroundBeltVM>(navigationStore,
+                () => new UndergroundBeltVM(navigationStore));
+            NavigateFastUndergroundBelt = new NavigateCommand<FastUndergroundBeltVM>(navigationStore,
+                () => new FastUndergroundBeltVM(navigationStore));
+            NavigateExpressUndergroundBelt = new NavigateCommand<ExpressUndergroundBeltVM>(navigationStore,
+                () => new ExpressUndergroundBeltVM(navigationStore));
+            NavigateSplitter = new NavigateCommand<SplitterVM>(navigationStore,
+                () => new SplitterVM(navigationStore));
+            NavigateFastSplitter = new NavigateCommand<FastSplitterVM>(navigationStore,
+                () => new FastSplitterVM(navigationStore));
+            NavigateExpressSplitter = new NavigateCommand<ExpressSplitterVM>(navigationStore,
+                () => new ExpressSplitterVM(navigationStore));
+        }
+
+        private void CreateStores(NavigationStore navigationStore)
+        {
             NavigateWoodenChest = new NavigateCommand<WoodenChestVM>(navigationStore,
                 () => new WoodenChestVM(navigationStore));
-            NavigateIronChest = new NavigateCommand<EntityViewModel>(navigationStore,
-                () => new EntityViewModel(navigationStore, logisticEntity["Железный сундук"]));
-            NavigateSteelChest = new NavigateCommand<EntityViewModel>(navigationStore,
-                () => new EntityViewModel(navigationStore, logisticEntity["Стальной сундук"]));
-            NavigateStorageTank = new NavigateCommand<EntityViewModel>(navigationStore,
-                () => new EntityViewModel(navigationStore, logisticEntity["Резервуар"]));
-        }
-
-        private Dictionary<string, Logistics> CreateLogisticEntity()
-        {
-            var logisticEntities = new Dictionary<string, Logistics>();
-
-            var stores = CreateStores();
-            // var beltTransportSystems = CreateBeltTransportSustems();
-            // var inserters = CreateInsrters();
-            
-            foreach(var store in stores)
-                logisticEntities.Add(store.Name, store);
-            return logisticEntities;
-        }
-
-        private object CreateInsrters()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private object CreateBeltTransportSustems()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private Collection<Storage> CreateStores()
-        {
-            var collection = new Collection<Storage>();
-            var woodenChest = new Storage("Деревянный сундук", null, new Recipe(0.5), new TotalRaw(0.5), 16, 100, 
-                new Size(1, 1));
-            var ironChest = new Storage("Железный сундук", null, new Recipe(0.5), new TotalRaw(0.5), 32, 200,
-                new Size(1, 1));
-            var steelChest = new Storage("Стальной сундук", null, new Recipe(0.5), new TotalRaw(0.5), 48, 350,
-                new Size(1, 1));
-            var storageTank = new Storage("Резервуар", null, new Recipe(3), new TotalRaw(3), 25000, 500,
-                new Size(3, 3));
-            
-            collection.Add(woodenChest);
-            collection.Add(ironChest);
-            collection.Add(steelChest);
-            collection.Add(storageTank);
-
-            return collection;
+            NavigateIronChest = new NavigateCommand<IronChestVM>(navigationStore,
+                () => new IronChestVM(navigationStore));
+            NavigateSteelChest = new NavigateCommand<SteelChestVM>(navigationStore,
+                () => new SteelChestVM(navigationStore));
+            ;
+            NavigateStorageTank = new NavigateCommand<StorageTankVM>(navigationStore,
+                () => new StorageTankVM(navigationStore));
         }
     }
 }
