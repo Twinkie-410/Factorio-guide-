@@ -22,7 +22,7 @@
                     <TextBlock Grid.Column="0" Margin="5" Padding="5" TextWrapping="WrapWithOverflow"
                                Text="{Binding GetDescription}" />
                     <StackPanel Grid.Column="1" Margin="3">
-                        <Image Source="\Resources/Storeage images/Steel_chest_entity.png" />
+                        <Image Source="\Resources/Logistic Images/Steel_chest_entity.png" />
                         <Label>Затраты</Label>
                         <StackPanel Orientation="Horizontal">
                             <Grid Background="Gray" Margin="2">

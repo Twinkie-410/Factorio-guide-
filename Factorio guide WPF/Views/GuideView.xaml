@@ -9,13 +9,14 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <DockPanel>
-        <Grid DockPanel.Dock="Top" HorizontalAlignment="Left">
-            <Grid.Background>
+            <DockPanel.Background>
                 <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
-            </Grid.Background>
-            <Button Command="{Binding NavigateMainMenuCommand}" BorderThickness="0" Background="{x:Null}">
+            </DockPanel.Background>
+        <Grid DockPanel.Dock="Top">
+            <Button Command="{Binding NavigateMainMenuCommand}" HorizontalAlignment="Left" BorderThickness="0" Background="{x:Null}">
                 <Image Source="/Views/RecipeCategories/base/butback.png" Height="50" Width="50" />
             </Button>
+            <Label HorizontalAlignment="Center" Foreground="#FFFDFAFA" FontFamily="Sitka Subheading" FontSize="20">Гайды</Label>
         </Grid>
         <ListView DockPanel.Dock="Bottom" ItemsSource="{Binding Guide}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False">
             <ListView.ItemContainerStyle>
@@ -34,7 +35,7 @@
             <ListView.ItemTemplate>
                 <DataTemplate >
                     <StackPanel>
-                        <TextBlock Text="{Binding Title}" TextWrapping="WrapWithOverflow" HorizontalAlignment="Center"/>
+                        <TextBlock Text="{Binding Title}" TextWrapping="WrapWithOverflow" HorizontalAlignment="Center" FontWeight="Bold"/>
                         <TextBlock Text="{Binding GetText}" TextWrapping="WrapWithOverflow" />
 
                         <ListView ItemsSource="{Binding GetImage}" BorderThickness="0">

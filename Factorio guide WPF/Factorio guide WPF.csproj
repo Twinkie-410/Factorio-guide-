@@ -254,17 +254,16 @@
       <None Remove="Views\RecipeCategories\productoin\48px-Steel_furnace.png" />
       <None Remove="Views\RecipeCategories\productoin\48px-Stone_furnace.png" />
       <None Remove="Views\RecipeCategories\productoin\48px-Upgrade_planner.png" />
-      <Resource Include="Resources\Article\Тестовая статья\Leaf.jpg" />
       <None Remove="Resources\Article\Тестовая статья\Рисунок2.png" />
       <None Remove="Resources\Storeage images\Steel_chest_entity.png" />
       <None Remove="Resources\Storeage images\Iron_chest_entity.png" />
       <None Remove="Resources\Storeage images\Storage_tank_entity.png" />
-      <Resource Include="Resources\Storeage images\Iron_chest_entity.png" />
-      <Resource Include="Resources\Storeage images\Steel_chest_entity.png" />
+      <Resource Include="Resources\Logistic Images\Iron_chest_entity.png" />
       <None Remove="Resources\Storeage images\Wooden_chest_entity.png" />
-      <Resource Include="Resources\Storeage images\Storage_tank_entity.png" />
-      <Resource Include="Resources\Storeage images\Wooden_chest_entity.png" />
+      <Resource Include="Resources\Logistic Images\Steel_chest_entity.png" />
+      <Resource Include="Resources\Logistic Images\Storage_tank_entity.png" />
       <None Remove="Resources\Logistics icons\48px-Iron_chest.png" />
+      <Resource Include="Resources\Logistic Images\Wooden_chest_entity.png" />
       <Resource Include="Resources\Logistics icons\48px-Iron_chest.png" />
       <None Remove="Resources\Logistics icons\48px-Wooden_chest.png" />
       <Resource Include="Resources\Logistics icons\48px-Wooden_chest.png" />
@@ -497,10 +496,36 @@
       <Resource Include="Views\RecipeCategories\productoin\48px-Steel_furnace.png" />
       <Resource Include="Views\RecipeCategories\productoin\48px-Stone_furnace.png" />
       <Resource Include="Views\RecipeCategories\productoin\48px-Upgrade_planner.png" />
+      <None Remove="Resources\Logistic Images\Underground_belt_entity.png" />
+      <Resource Include="Resources\Logistic Images\Underground_belt_entity.png" />
+      <None Remove="Resources\Technology images\48px-Logistics_(research).png" />
+      <Resource Include="Resources\Technology images\48px-Logistics_(research).png" />
+      <None Remove="Views\RecipeCategories\logistics\48px-Stack_inserter.png" />
+      <Resource Include="Views\RecipeCategories\logistics\48px-Stack_inserter.png" />
+      <None Remove="Resources\Article\Гайды\Массовое производство\На 2 ресурса.jpg" />
+      <Resource Include="Resources\Article\Гайды\Массовое производство\На 2 ресурса.jpg" />
+      <None Remove="Resources\Article\Гайды\Массовое производство\На 1 русурс.jpg" />
+      <Resource Include="Resources\Article\Гайды\Массовое производство\На 1 ресурс.jpg" />
+      <None Remove="Resources\Article\Гайды\Массовое производство\На 3 ресурса.jpg" />
+      <Resource Include="Resources\Article\Гайды\Массовое производство\На 3 ресурса.jpg" />
+      <None Remove="Resources\Article\Гайды\Массовое производство\На 3 ресурса(вывод).jpg" />
+      <Resource Include="Resources\Article\Гайды\Массовое производство\На 3 ресурса(вывод).jpg" />
+      <None Remove="Resources\Article\Гайды\Массовое производство\На 4 ресурса.jpg" />
+      <Resource Include="Resources\Article\Гайды\Массовое производство\На 4 ресурса.jpg" />
+      <None Remove="Resources\Article\Гайды\Массовое производство\На 5 русерсов.png" />
+      <Resource Include="Resources\Article\Гайды\Массовое производство\На 5 ресурсов.jpg" />
+      <None Remove="Resources\Article\Советы\Мирный режим.jpg" />
+      <Resource Include="Resources\Article\Советы\Мирный режим.jpg" />
+      <None Remove="Resources\Article\Схемы\Переплавляющий цех.jpg" />
+      <Resource Include="Resources\Article\Схемы\Переплавляющий цех.jpg" />
+      <None Remove="Resources\Article\Схемы\Переплавляющий цех 1.jpg" />
+      <Resource Include="Resources\Article\Схемы\Переплавляющий цех 1.jpg" />
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Resources\Article\Гайды\Массовое производство\Электричество" />
       <Folder Include="Resources\Product icons" />
+      <Folder Include="Resources\Technology images" />
     </ItemGroup>
 
 </Project>

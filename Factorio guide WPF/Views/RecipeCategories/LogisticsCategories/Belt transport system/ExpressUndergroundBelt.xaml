@@ -9,7 +9,7 @@
     <DockPanel>
         <DockPanel DockPanel.Dock="Top">
             <Button DockPanel.Dock="Left" Command="{Binding NavigateLogisticCommand}">Назад</Button>
-            <Label HorizontalAlignment="Center">Текст</Label>
+            <Label HorizontalAlignment="Center">Подземный экспресс-конвейер</Label>
         </DockPanel>
         <ScrollViewer>
             <StackPanel>

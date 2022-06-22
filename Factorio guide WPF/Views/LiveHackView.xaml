@@ -6,15 +6,69 @@
              xmlns:local="clr-namespace:Factorio_guide_WPF.Views"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
-        </Grid.Background>
-        <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Button Command="{Binding NavigateMainMenuCommand}" BorderThickness="0" Background="{x:Null}">
+    <DockPanel>
+            <DockPanel.Background>
+                <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
+            </DockPanel.Background>
+        <Grid DockPanel.Dock="Top">
+            <Button Command="{Binding NavigateMainMenuCommand}" HorizontalAlignment="Left" BorderThickness="0" Background="{x:Null}">
                 <Image Source="/Views/RecipeCategories/base/butback.png" Height="50" Width="50" />
             </Button>
+            <Label HorizontalAlignment="Center" Foreground="#FFFDFAFA" FontFamily="Sitka Subheading" FontSize="20">Лайфхаки</Label>
         </Grid>
-        
-    </Grid>
+        <ListView DockPanel.Dock="Bottom" ItemsSource="{Binding LiveHacks}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False">
+            <ListView.ItemContainerStyle>
+                <Style TargetType="{x:Type ListViewItem}">
+                    <Setter Property="Background" Value="Transparent" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                <ContentPresenter />
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </ListView.ItemContainerStyle>
+            
+            <ListView.ItemTemplate>
+                <DataTemplate >
+                    <StackPanel>
+                        <TextBlock Text="{Binding Title}" TextWrapping="WrapWithOverflow" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <TextBlock Text="{Binding GetText}" TextWrapping="WrapWithOverflow" />
+
+                        <ListView ItemsSource="{Binding GetImage}" BorderThickness="0">
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="{x:Type ListViewItem}">
+                                    <Setter Property="Background" Value="Transparent" />
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="{x:Type ListViewItem}">
+                                                <ContentPresenter />
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel />
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                            <ListView.Template>
+                                <ControlTemplate>
+                                    <ItemsPresenter />
+                                </ControlTemplate>
+                            </ListView.Template>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Image Source="{Binding UriSource}" MaxHeight="400"/>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <Line Stretch="Fill" Stroke="Gray" X2="1" Margin="2" StrokeThickness="2"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </DockPanel>
 </UserControl>

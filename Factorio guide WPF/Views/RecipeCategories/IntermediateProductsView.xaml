@@ -6,11 +6,11 @@
              xmlns:local="clr-namespace:Factorio_guide_WPF.Views"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <Grid.Background>
+    <DockPanel>
+        <DockPanel.Background>
             <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
-        </Grid.Background>
-        <Grid VerticalAlignment="Top">
+        </DockPanel.Background>
+        <Grid DockPanel.Dock="Top">
             <Button HorizontalAlignment="Left" Command="{Binding NavigateRecipesCommand}" BorderThickness="0" Background="{x:Null}">
                 <Image Source="/Views/RecipeCategories/base/butback.png" Height="50" Width="50" />
             </Button>
@@ -40,8 +40,8 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
+                <!-- <RowDefinition Height="*" /> -->
+                <!-- <RowDefinition Height="*" /> -->
             </Grid.RowDefinitions>
 
             <Button Grid.Row="1" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
@@ -235,5 +235,5 @@
             </Button>
 
         </Grid>
-    </Grid>
+    </DockPanel>
 </UserControl>

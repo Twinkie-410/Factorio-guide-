@@ -5,11 +5,11 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Factorio_guide_WPF.Views.RecipeCategories.LogisticsCategories.Belt_transport_system"
              mc:Ignorable="d"
-             d:DesignHeight="300" d:DesignWidth="300">
+             d:DesignHeight="300" d:DesignWidth="450">
     <DockPanel>
         <DockPanel DockPanel.Dock="Top">
             <Button DockPanel.Dock="Left" Command="{Binding NavigateLogisticCommand}">Назад</Button>
-            <Label HorizontalAlignment="Center">Текст</Label>
+            <Label HorizontalAlignment="Center">Подземный конвейер</Label>
         </DockPanel>
         <ScrollViewer>
             <StackPanel>
@@ -22,57 +22,70 @@
                     <TextBlock Grid.Column="0" Margin="5" Padding="5" TextWrapping="WrapWithOverflow"
                                Text="{Binding GetDescription}" />
                     <StackPanel Grid.Column="1" Margin="3">
-                        <Image Source="" />
+                        <Image Source="\Resources/Logistic Images/Underground_belt_entity.png" />
                         <Label>Затраты</Label>
                         <StackPanel Orientation="Horizontal">
                             <Grid Background="Gray" Margin="2">
-                                <Image Width="48" Source=""></Image>
+                                <Image Width="48" Source="\Resources/Product icons/Time.png"></Image>
                                 <Label VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="0" FontSize="18"
                                        Foreground="White">
-                                    Значение
+                                    1
                                 </Label>
                             </Grid>
                             <Grid Background="Gray" Margin="2">
-                                <Image Source=""></Image>
+                                <Image Source="\Views/RecipeCategories/components/48px-Iron_plate.png"></Image>
                                 <Label VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="0" FontSize="18"
                                        Foreground="White">
-                                    Значение
+                                    10
+                                </Label>
+                            </Grid>
+                            <Grid Background="Gray" Margin="2">
+                                <Image Source="\Views/RecipeCategories/logistics/48px-Transport_belt.png"></Image>
+                                <Label VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="0" FontSize="18"
+                                       Foreground="White">
+                                    5
                                 </Label>
                             </Grid>
                         </StackPanel>
                         <Label>Всего ресурсов</Label>
                         <StackPanel Orientation="Horizontal">
                             <Grid Background="Gray" Margin="2">
-                                <Image Width="48" Source=""></Image>
+                                <Image Width="48" Source="\Resources/Product icons/Time.png"></Image>
                                 <Label VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="0" FontSize="18"
                                        Foreground="White">
-                                    Значение
+                                    3.5
                                 </Label>
                             </Grid>
                             <Grid Background="Gray" Margin="2">
-                                <Image Source=""></Image>
+                                <Image Source="\Views/RecipeCategories/components/48px-Iron_plate.png"></Image>
                                 <Label VerticalAlignment="Bottom" HorizontalAlignment="Right" Padding="0" FontSize="18"
                                        Foreground="White">
-                                    Значение
+                                    17.5
                                 </Label>
                             </Grid>
                         </StackPanel>
                         <DockPanel>
-                            <Label DockPanel.Dock="Left">Параметр</Label>
-                            <Label HorizontalAlignment="Right">Значение</Label>
+                            <Label DockPanel.Dock="Left">Здоровье</Label>
+                            <Label HorizontalAlignment="Right">150</Label>
                         </DockPanel>
                         <DockPanel>
                             <Label DockPanel.Dock="Left">Параметр</Label>
                             <Label HorizontalAlignment="Right">Значение</Label>
                         </DockPanel>
                         <DockPanel>
-                            <Label DockPanel.Dock="Left">Параметр</Label>
-                            <Label HorizontalAlignment="Right">Значение</Label>
+                            <Label DockPanel.Dock="Left">Скорость конвейера</Label>
+                            <Label HorizontalAlignment="Right">15</Label>
                         </DockPanel>
                         <DockPanel>
-                            <Label DockPanel.Dock="Left">Параметр</Label>
-                            <Label HorizontalAlignment="Right">Значение</Label>
+                            <Label DockPanel.Dock="Left">Размер стопки</Label>
+                            <Label HorizontalAlignment="Right">50</Label>
                         </DockPanel>
+                        <Label>Необходимые технологии</Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Chartreuse" Margin="2">
+                                <Image Source="/Resources/Technology images/48px-Logistics_(research).png"></Image>
+                            </Grid>
+                        </StackPanel>
 
                     </StackPanel>
                 </Grid>

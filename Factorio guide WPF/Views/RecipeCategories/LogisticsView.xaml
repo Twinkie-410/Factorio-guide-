@@ -6,17 +6,17 @@
              xmlns:local="clr-namespace:Factorio_guide_WPF.Views"
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
-    <Grid>
-        <Grid.Background>
+    <DockPanel>
+        <DockPanel.Background>
             <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
-        </Grid.Background>
-        <Grid VerticalAlignment="Top">
+        </DockPanel.Background>
+        <Grid DockPanel.Dock="Top">
             <Button HorizontalAlignment="Left" Command="{Binding NavigateRecipesCommand}" BorderThickness="0" Background="{x:Null}">
                 <Image Source="/Views/RecipeCategories/base/butback.png" Height="50" Width="50" />
             </Button>
             <Label HorizontalAlignment="Center" Content="Логистика" Foreground="Snow" FontSize="20" FontFamily="Sitka Subheading"></Label>
         </Grid>
-        <Grid Width="auto" Height="auto">
+        <Grid Width="auto" Height="auto" DockPanel.Dock="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
@@ -55,38 +55,35 @@
             </Button>
 
 
-            <Button Grid.Row="2" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+            <Button Grid.Row="2" Grid.Column="0" Command="{Binding NavigateTransportBelt}" Margin="1,1,1,1" BorderThickness="0">
                 <Image Source="/Views/RecipeCategories/logistics/48px-Fast_transport_belt.png" />
             </Button>
-            <Button Grid.Row="2" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+            <Button Grid.Row="2" Grid.Column="1" Command="{Binding NavigateFastTransportBelt}" Margin="1,1,1,1" BorderThickness="0">
                 <Image Source="/Views/RecipeCategories/logistics/48px-Fast_transport_belt.png" />
             </Button>
-            <Button Grid.Row="2" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+            <Button Grid.Row="2" Grid.Column="2" Command="{Binding NavigateExpressTransportBelt}" Margin="1,1,1,1" BorderThickness="0">
                 <Image Source="/Views/RecipeCategories/logistics/48px-Express_transport_belt.png" />
             </Button>
-            <Button Grid.Row="2" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+            <Button Grid.Row="2" Grid.Column="3" Command="{Binding NavigateUndergroundBelt}" Margin="1,1,1,1" BorderThickness="0">
                 <Image Source="/Views/RecipeCategories/logistics/48px-Underground_belt.png" />
             </Button>
-            <Button Grid.Row="2" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+            <Button Grid.Row="2" Grid.Column="4" Command="{Binding NavigateFastUndergroundBelt}" Margin="1,1,1,1" BorderThickness="0">
                 <Image Source="/Views/RecipeCategories/logistics/48px-Fast_underground_belt.png" />
             </Button>
-            <Button Grid.Row="2" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+            <Button Grid.Row="2" Grid.Column="5" Command="{Binding NavigateExpressUndergroundBelt}" Margin="1,1,1,1" BorderThickness="0">
                 <Image Source="/Views/RecipeCategories/logistics/48px-Express_underground_belt.png" />
             </Button>
-            <Button Grid.Row="2" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+            <Button Grid.Row="2" Grid.Column="6" Command="{Binding NavigateSplitter}" Margin="1,1,1,1" BorderThickness="0">
                 <Image Source="/Views/RecipeCategories/logistics/48px-Splitter.png" />
             </Button>
-            <Button Grid.Row="2" Grid.Column="7" Margin="1,1,1,1" BorderThickness="0">
+            <Button Grid.Row="2" Grid.Column="7" Command="{Binding NavigateFastSplitter}" Margin="1,1,1,1" BorderThickness="0">
                 <Image Source="/Views/RecipeCategories/logistics/48px-Fast_splitter.png" />
             </Button>
-            <Button Grid.Row="2" Grid.Column="8" Margin="1,1,1,1" BorderThickness="0">
+            <Button Grid.Row="2" Grid.Column="8" Command="{Binding NavigateExpressSplitter}" Margin="1,1,1,1" BorderThickness="0">
                 <Image Source="/Views/RecipeCategories/logistics/48px-Express_splitter.png" />
             </Button>
-            <Button Grid.Row="2" Grid.Column="9" Margin="1,1,1,1" BorderThickness="0">
-                <Image Source="/Views/RecipeCategories/logistics/48px-Burner_inserter.png" />
-            </Button>
-            
 
+            
             <Button Grid.Row="3" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
                 <Image Source="/Views/RecipeCategories/logistics/48px-Burner_inserter.png" />
             </Button>
@@ -254,5 +251,5 @@
             </Button>
 
         </Grid>
-    </Grid>
+    </DockPanel>
 </UserControl>

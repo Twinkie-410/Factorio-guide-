@@ -20,11 +20,11 @@ namespace Factorio_guide_WPF.Models.Materials_and_Recipes.Article
             get =>  Images;
         }
         
-        public Article(StreamReader content, List<BitmapImage> images, string title = null)
+        public Article(StreamReader content, List<BitmapImage> images = null, string title = null)
         {
             Content = content;
             Images = images;
-            Title = content.ReadLine();
+            Title = content != null ? content.ReadLine() : title;
         }
 
         private string StreamToText()

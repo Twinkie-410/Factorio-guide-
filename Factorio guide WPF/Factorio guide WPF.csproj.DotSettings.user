@@ -1,3 +1,5 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/MappedPaths/=VIEWS_005CRECIPECATEGORIES_005CLOGISTICS_005C48PX_002DSTACK_005FINSERTER_002EPNG/@EntryIndexedValue"></s:String>
 	<s:String x:Key="/Default/CodeInspection/WebPathMapping/MappedPaths/=VIEWS_005CRG_002EPNG/@EntryIndexedValue"></s:String>
+	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=VIEWS_005CRECIPECATEGORIES_005CLOGISTICS_005C48PX_002DSTACK_005FINSERTER_002EPNG/@EntryIndexedValue">Views\RecipeCategories\logistics\48px-Stack_inserter.png</s:String>
 	<s:String x:Key="/Default/CodeInspection/WebPathMapping/PathsInCorrectCasing/=VIEWS_005CRG_002EPNG/@EntryIndexedValue">Views\RG.png</s:String></wpf:ResourceDictionary>
