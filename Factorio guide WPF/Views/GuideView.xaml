@@ -10,7 +10,13 @@
              d:DesignHeight="300" d:DesignWidth="300">
     <DockPanel>
         <Grid DockPanel.Dock="Top" HorizontalAlignment="Left">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
+            </Grid.Background>
             <Button Content="Назад" Command="{Binding NavigateMainMenuCommand}" />
+            <Button>
+                <Image Source="/Views/RecipeCategories/base/butback.png" />
+            </Button>
         </Grid>
         <ListView DockPanel.Dock="Bottom" ItemsSource="{Binding Guide}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.CanContentScroll="False">
             <ListView.ItemContainerStyle>

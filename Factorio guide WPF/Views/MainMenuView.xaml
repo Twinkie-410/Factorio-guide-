@@ -7,11 +7,30 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
+        </Grid.Background>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Content="Рецепты" Command="{Binding NavigateRecipesCommand}"/>
-            <Button Content="Лайфхаки" Command="{Binding NavigateLiveHackCommand}"/>
-            <Button Content="Гайды" Command="{Binding NavigateGuideCommand}"/>
-            <Button Content="Часто задаваемые вопросы" Command="{Binding NavigateFaqCommand}"/>
+            <Button Content="Рецепты" Command="{Binding NavigateRecipesCommand}" BorderThickness="0" Height="41" RenderTransformOrigin="0.5,0.5" Width="210" Foreground="#FFFDFAFA" FontFamily="Sitka Subheading" FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Views/but.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Лайфхаки" Command="{Binding NavigateLiveHackCommand}" BorderThickness="0" Height="41" RenderTransformOrigin="0.5,0.5" Width="210" Foreground="#FFFDFAFA" FontFamily="Sitka Subheading" FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Views/but.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Гайды" Command="{Binding NavigateGuideCommand}" BorderThickness="0" Height="41" RenderTransformOrigin="0.5,0.5" Width="210" Foreground="#FFFDFAFA" FontFamily="Sitka Subheading" FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Views/but.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Часто задаваемые вопросы" Command="{Binding NavigateFaqCommand}" BorderThickness="0" Height="41" RenderTransformOrigin="0.5,0.5" Width="210" Foreground="#FFFDFAFA" FontFamily="Sitka Subheading" FontSize="16">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Views/but.png"/>
+                </Button.Background>
+            </Button>
         </StackPanel>
     </Grid>
 </UserControl>

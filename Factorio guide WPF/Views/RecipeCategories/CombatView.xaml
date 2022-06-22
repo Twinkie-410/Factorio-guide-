@@ -7,9 +7,15 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
         <Grid>
-            <Grid VerticalAlignment="Top">
-                <Button HorizontalAlignment="Left" Content="Назад" Command="{Binding NavigateRecipesCommand}"/>
-                <Label HorizontalAlignment="Center" Content="Военная промышленность"></Label>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
+        </Grid.Background>
+        <Grid VerticalAlignment="Top">
+            <Button HorizontalAlignment="Left" Command="{Binding NavigateRecipesCommand}" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/base/butback.png" Height="35" Width="39" />
+            </Button>
+
+            <Label HorizontalAlignment="Center" Content="Военная промышленность"></Label>
             </Grid>
         <Grid Width="auto" Height="auto">
             <Grid.ColumnDefinitions>
@@ -39,81 +45,185 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Button Grid.Row="1" Grid.Column="0" />
-            <Button Grid.Row="1" Grid.Column="1" />
-            <Button Grid.Row="1" Grid.Column="2" />
-            <Button Grid.Row="1" Grid.Column="3" />
-            <Button Grid.Row="1" Grid.Column="4" />
-            <Button Grid.Row="1" Grid.Column="5" />
-            <Button Grid.Row="1" Grid.Column="6" />
-            <Button Grid.Row="1" Grid.Column="7" />
+            <Button Grid.Row="1" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Pistol.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Submachine_gun.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Shotgun.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Combat_shotgun.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Rocket_launcher.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Flamethrower.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Land_mine.png" />
+            </Button>
 
 
-            <Button Grid.Row="2" Grid.Column="0" />
-            <Button Grid.Row="2" Grid.Column="1" />
-            <Button Grid.Row="2" Grid.Column="2" />
-            <Button Grid.Row="2" Grid.Column="3" />
-            <Button Grid.Row="2" Grid.Column="4" />
-            <Button Grid.Row="2" Grid.Column="5" />
-            <Button Grid.Row="2" Grid.Column="6" />
-            <Button Grid.Row="2" Grid.Column="7" />
-            <Button Grid.Row="2" Grid.Column="8" />
+            <Button Grid.Row="2" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Firearm_magazine.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Piercing_rounds_magazine.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Uranium_rounds_magazine.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Shotgun_shells.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Piercing_shotgun_shells.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Cannon_shell.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Explosive_cannon_shell.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="7" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Uranium_cannon_shell.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="8" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Explosive_uranium_cannon_shell.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="9" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Artillery_shell.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="10" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Rocket.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="11" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Explosive_rocket.png" />
+            </Button>
 
-            <Button Grid.Row="3" Grid.Column="0" />
-            <Button Grid.Row="3" Grid.Column="1" />
-            <Button Grid.Row="3" Grid.Column="2" />
-            <Button Grid.Row="3" Grid.Column="3" />
-            <Button Grid.Row="3" Grid.Column="4" />
-            <Button Grid.Row="3" Grid.Column="5" />
-            <Button Grid.Row="3" Grid.Column="6" />
 
-            <Button Grid.Row="4" Grid.Column="0" />
-            <Button Grid.Row="4" Grid.Column="1" />
-            <Button Grid.Row="4" Grid.Column="2" />
-            <Button Grid.Row="4" Grid.Column="3" />
-            <Button Grid.Row="4" Grid.Column="4" />
-            <Button Grid.Row="4" Grid.Column="5" />
-            <Button Grid.Row="4" Grid.Column="6" />
+            <Button Grid.Row="3" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Atomic_bomb.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Flamethrower_ammo.png" />
+            </Button>
 
-            <Button Grid.Row="5" Grid.Column="0" />
-            <Button Grid.Row="5" Grid.Column="1" />
-            <Button Grid.Row="5" Grid.Column="2" />
-            <Button Grid.Row="5" Grid.Column="3" />
-            <Button Grid.Row="5" Grid.Column="4" />
-            <Button Grid.Row="5" Grid.Column="5" />
-            <Button Grid.Row="5" Grid.Column="6" />
-            <Button Grid.Row="5" Grid.Column="7" />
 
-            <Button Grid.Row="6" Grid.Column="0" />
-            <Button Grid.Row="6" Grid.Column="1" />
-            <Button Grid.Row="6" Grid.Column="2" />
-            <Button Grid.Row="6" Grid.Column="3" />
+            <Button Grid.Row="4" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Flamethrower_ammo.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Cluster_grenade.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Poison_capsule.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Slowdown_capsule.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Defender_capsule.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Distractor_capsule.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Destroyer_capsule.png" />
+            </Button>
 
-            <Button Grid.Row="7" Grid.Column="0" />
-            <Button Grid.Row="7" Grid.Column="1" />
-            <Button Grid.Row="7" Grid.Column="2" />
-            <Button Grid.Row="7" Grid.Column="3" />
-            <Button Grid.Row="7" Grid.Column="4" />
-            <Button Grid.Row="7" Grid.Column="5" />
-            <Button Grid.Row="7" Grid.Column="6" />
-            <Button Grid.Row="7" Grid.Column="7" />
 
-            <Button Grid.Row="8" Grid.Column="0" />
-            <Button Grid.Row="8" Grid.Column="1" />
-            <Button Grid.Row="8" Grid.Column="2" />
-            <Button Grid.Row="8" Grid.Column="3" />
-            <Button Grid.Row="8" Grid.Column="4" />
-            <Button Grid.Row="8" Grid.Column="5" />
-            <Button Grid.Row="8" Grid.Column="6" />
-            <Button Grid.Row="8" Grid.Column="7" />
+            <Button Grid.Row="5" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Light_armor.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Heavy_armor.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Modular_armor.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Power_armor.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Power_armor_MK2.png" />
+            </Button>
 
-            <Button Grid.Row="9" Grid.Column="0" />
-            <Button Grid.Row="9" Grid.Column="1" />
-            <Button Grid.Row="9" Grid.Column="2" />
-            <Button Grid.Row="9" Grid.Column="3" />
-            <Button Grid.Row="9" Grid.Column="4" />
-            <Button Grid.Row="9" Grid.Column="5" />
-            <Button Grid.Row="9" Grid.Column="6" />
+
+            <Button Grid.Row="6" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Portable_solar_panel.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Portable_fusion_reactor.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Personal_battery.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Personal_battery_MK2.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Belt_immunity_equipment.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Exoskeleton.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Personal_roboport.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="7" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Personal_roboport_MK2.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="8" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Nightvision.png" />
+            </Button>
+
+
+            <Button Grid.Row="7" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Energy_shield.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Energy_shield.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Personal_laser_defense.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Discharge_defense.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Discharge_defense_remote.png" />
+            </Button>
+
+
+            <Button Grid.Row="8" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Wall.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Gate.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Gun_turret.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Laser_turret.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Flamethrower_turret.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Artillery_turret.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Artillery_targeting_remote.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="7" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/combat/48px-Radar.png" />
+            </Button>
 
         </Grid>
     </Grid>

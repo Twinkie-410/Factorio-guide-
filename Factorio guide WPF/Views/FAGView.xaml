@@ -7,8 +7,13 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
+        </Grid.Background>
         <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Button Content="Назад" Command="{Binding NavigateMainMenuCommand}"/>
+        <Button Command="{Binding NavigateMainMenuCommand}" BorderThickness="0">
+            <Image Source="/Views/RecipeCategories/base/butback.png" Height="35" Width="39" />
+            </Button>
         </Grid>
     </Grid>
 </UserControl>

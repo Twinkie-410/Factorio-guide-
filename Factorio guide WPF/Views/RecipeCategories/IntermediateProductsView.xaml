@@ -7,8 +7,13 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
+        </Grid.Background>
         <Grid VerticalAlignment="Top">
-            <Button HorizontalAlignment="Left" Content="Назад" Command="{Binding NavigateRecipesCommand}"/>
+            <Button HorizontalAlignment="Left" Command="{Binding NavigateRecipesCommand}" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/base/butback.png" Height="35" Width="39" />
+            </Button>
             <Label HorizontalAlignment="Center" Content="Компоненты"></Label>
         </Grid>
          <Grid Width="auto" Height="auto">
@@ -39,81 +44,195 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Button Grid.Row="1" Grid.Column="0" />
-            <Button Grid.Row="1" Grid.Column="1" />
-            <Button Grid.Row="1" Grid.Column="2" />
-            <Button Grid.Row="1" Grid.Column="3" />
-            <Button Grid.Row="1" Grid.Column="4" />
-            <Button Grid.Row="1" Grid.Column="5" />
-            <Button Grid.Row="1" Grid.Column="6" />
-            <Button Grid.Row="1" Grid.Column="7" />
+            <Button Grid.Row="1" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Crude_oil.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Heavy_oil.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Light_oil.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Lubricant.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Petroleum_gas.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Sulfuric_acid.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Water.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="7" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Steam.png" />
+            </Button>
 
 
-            <Button Grid.Row="2" Grid.Column="0" />
-            <Button Grid.Row="2" Grid.Column="1" />
-            <Button Grid.Row="2" Grid.Column="2" />
-            <Button Grid.Row="2" Grid.Column="3" />
-            <Button Grid.Row="2" Grid.Column="4" />
-            <Button Grid.Row="2" Grid.Column="5" />
-            <Button Grid.Row="2" Grid.Column="6" />
-            <Button Grid.Row="2" Grid.Column="7" />
-            <Button Grid.Row="2" Grid.Column="8" />
+            <Button Grid.Row="2" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Wood.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Coal.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Stone.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Iron_ore.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Copper_ore.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Uranium_ore.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Raw_fish.png" />
+            </Button>
 
-            <Button Grid.Row="3" Grid.Column="0" />
-            <Button Grid.Row="3" Grid.Column="1" />
-            <Button Grid.Row="3" Grid.Column="2" />
-            <Button Grid.Row="3" Grid.Column="3" />
-            <Button Grid.Row="3" Grid.Column="4" />
-            <Button Grid.Row="3" Grid.Column="5" />
-            <Button Grid.Row="3" Grid.Column="6" />
 
-            <Button Grid.Row="4" Grid.Column="0" />
-            <Button Grid.Row="4" Grid.Column="1" />
-            <Button Grid.Row="4" Grid.Column="2" />
-            <Button Grid.Row="4" Grid.Column="3" />
-            <Button Grid.Row="4" Grid.Column="4" />
-            <Button Grid.Row="4" Grid.Column="5" />
-            <Button Grid.Row="4" Grid.Column="6" />
+            <Button Grid.Row="3" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Iron_plate.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Copper_plate.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Solid_fuel.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Steel_plate.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Plastic_bar.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Sulfur.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Battery.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="7" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Explosives.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="8" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Uranium_processing.png" />
+            </Button>
 
-            <Button Grid.Row="5" Grid.Column="0" />
-            <Button Grid.Row="5" Grid.Column="1" />
-            <Button Grid.Row="5" Grid.Column="2" />
-            <Button Grid.Row="5" Grid.Column="3" />
-            <Button Grid.Row="5" Grid.Column="4" />
-            <Button Grid.Row="5" Grid.Column="5" />
-            <Button Grid.Row="5" Grid.Column="6" />
-            <Button Grid.Row="5" Grid.Column="7" />
 
-            <Button Grid.Row="6" Grid.Column="0" />
-            <Button Grid.Row="6" Grid.Column="1" />
-            <Button Grid.Row="6" Grid.Column="2" />
-            <Button Grid.Row="6" Grid.Column="3" />
+            <Button Grid.Row="4" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Crude_oil_barrel.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Heavy_oil_barrel.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Light_oil_barrel.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Lubricant_barrel.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Petroleum_gas_barrel.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Sulfuric_acid_barrel.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Water_barrel.png" />
+            </Button>
+             
 
-            <Button Grid.Row="7" Grid.Column="0" />
-            <Button Grid.Row="7" Grid.Column="1" />
-            <Button Grid.Row="7" Grid.Column="2" />
-            <Button Grid.Row="7" Grid.Column="3" />
-            <Button Grid.Row="7" Grid.Column="4" />
-            <Button Grid.Row="7" Grid.Column="5" />
-            <Button Grid.Row="7" Grid.Column="6" />
-            <Button Grid.Row="7" Grid.Column="7" />
+            <Button Grid.Row="5" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Copper_cable.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Iron_stick.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Iron_gear_wheel.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Empty_barrel.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Electronic_circuit.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Electronic_circuit.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Processing_unit.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="7" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Engine_unit.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="8" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Electric_engine_unit.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="9" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Flying_robot_frame.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="10" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Rocket_part.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="11" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Rocket_control_unit.png" />
+            </Button>
 
-            <Button Grid.Row="8" Grid.Column="0" />
-            <Button Grid.Row="8" Grid.Column="1" />
-            <Button Grid.Row="8" Grid.Column="2" />
-            <Button Grid.Row="8" Grid.Column="3" />
-            <Button Grid.Row="8" Grid.Column="4" />
-            <Button Grid.Row="8" Grid.Column="5" />
-            <Button Grid.Row="8" Grid.Column="6" />
-            <Button Grid.Row="8" Grid.Column="7" />
 
-            <Button Grid.Row="9" Grid.Column="0" />
-            <Button Grid.Row="9" Grid.Column="1" />
-            <Button Grid.Row="9" Grid.Column="2" />
-            <Button Grid.Row="9" Grid.Column="3" />
-            <Button Grid.Row="9" Grid.Column="4" />
-            <Button Grid.Row="9" Grid.Column="5" />
-            <Button Grid.Row="9" Grid.Column="6" />
+            <Button Grid.Row="6" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Low_density_structure.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Rocket_fuel.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Nuclear_fuel.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Uranium-235.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Uranium-238.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Uranium_fuel_cell.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Nuclear_fuel_reprocessing.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="7" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Kovarex_enrichment_process.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="8" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Used_up_uranium_fuel_cell.png" />
+            </Button>
+
+
+            <Button Grid.Row="7" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Automation_science_pack.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Logistic_science_pack.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Military_science_pack.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Chemical_science_pack.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Production_science_pack.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Utility_science_pack.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/components/48px-Space_science_pack.png" />
+            </Button>
 
         </Grid>
     </Grid>

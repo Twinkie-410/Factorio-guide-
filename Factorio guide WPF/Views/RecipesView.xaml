@@ -7,14 +7,36 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
+        </Grid.Background>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Content="Логистика" Command="{Binding NavigateLogisticCommand}"/>
-            <Button Content="Производство" Command="{Binding NavigateProductionCommand}"/>
-            <Button Content="Компоненты" Command="{Binding NavigateIntermediateProductsCommand}"/>
-            <Button Content="Военная промышленность" Command="{Binding NavigateCombatCommand}"/>
+            <Button Content="Логистика" Command="{Binding NavigateLogisticCommand}" BorderThickness="0" Height="41" RenderTransformOrigin="0.5,0.5" Width="210" Foreground="#FFFDFAFA" FontFamily="Sitka Subheading" FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Views/but.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Производство" Command="{Binding NavigateProductionCommand}" BorderThickness="0" Height="41" RenderTransformOrigin="0.5,0.5" Width="210" Foreground="#FFFDFAFA" FontFamily="Sitka Subheading" FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Views/but.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Компоненты" Command="{Binding NavigateIntermediateProductsCommand}" BorderThickness="0" Height="41" RenderTransformOrigin="0.5,0.5" Width="210" Foreground="#FFFDFAFA" FontFamily="Sitka Subheading" FontSize="20">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Views/but.png"/>
+                </Button.Background>
+            </Button>
+            <Button Content="Военная промышленность" Command="{Binding NavigateCombatCommand}" BorderThickness="0" Height="41" RenderTransformOrigin="0.5,0.5" Width="210" Foreground="#FFFDFAFA" FontFamily="Sitka Subheading" FontSize="17">
+            <Button.Background>
+                <ImageBrush ImageSource="/Views/but.png"/>
+            </Button.Background>
+            </Button>
         </StackPanel>
         <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
             <Button Content="Назад" Command="{Binding NavigateMainMenuCommand}"/>
+            <Button>
+                <Image Source="/Views/RecipeCategories/base/butback.png" />
+            </Button>
         </Grid>
     </Grid>
 </UserControl>

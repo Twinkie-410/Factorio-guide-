@@ -7,8 +7,13 @@
              mc:Ignorable="d"
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
+        </Grid.Background>
         <Grid VerticalAlignment="Top">
-            <Button HorizontalAlignment="Left" Content="Назад" Command="{Binding NavigateRecipesCommand}"/>
+            <Button HorizontalAlignment="Left" Command="{Binding NavigateRecipesCommand}" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/base/butback.png" Height="35" Width="39" />
+            </Button>
             <Label HorizontalAlignment="Center" Content="Логистика"></Label>
         </Grid>
         <Grid Width="auto" Height="auto">
@@ -36,76 +41,217 @@
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
-            <Button Grid.Row="1" Grid.Column="0" Command="{Binding NavigateWoodenChest}"/>
-            <Button Grid.Row="1" Grid.Column="1" Command="{Binding NavigateIronChest}"/>
-            <Button Grid.Row="1" Grid.Column="2" Command="{Binding NavigateSteelChest}"/>
-            <Button Grid.Row="1" Grid.Column="3" Command="{Binding NavigateStorageTank}"/>
+            <Button Grid.Row="1" Grid.Column="0" Command="{Binding NavigateWoodenChest}" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Wooden_chest.png"/>
+            </Button>
+            <Button Grid.Row="1" Grid.Column="1" Command="{Binding NavigateIronChest}" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Iron_chest.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="2" Command="{Binding NavigateSteelChest}" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Steel_chest.png" />
+            </Button>
+            <Button Grid.Row="1" Grid.Column="3" Command="{Binding NavigateStorageTank}" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Storage_tank.png" />
+            </Button>
 
-            <Button Grid.Row="2" Grid.Column="0" />
-            <Button Grid.Row="2" Grid.Column="1" />
-            <Button Grid.Row="2" Grid.Column="2" />
-            <Button Grid.Row="2" Grid.Column="3" />
-            <Button Grid.Row="2" Grid.Column="4" />
-            <Button Grid.Row="2" Grid.Column="5" />
-            <Button Grid.Row="2" Grid.Column="6" />
-            <Button Grid.Row="2" Grid.Column="7" />
-            <Button Grid.Row="2" Grid.Column="8" />
 
-            <Button Grid.Row="3" Grid.Column="0" />
-            <Button Grid.Row="3" Grid.Column="1" />
-            <Button Grid.Row="3" Grid.Column="2" />
-            <Button Grid.Row="3" Grid.Column="3" />
-            <Button Grid.Row="3" Grid.Column="4" />
-            <Button Grid.Row="3" Grid.Column="5" />
-            <Button Grid.Row="3" Grid.Column="6" />
+            <Button Grid.Row="2" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Fast_transport_belt.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Fast_transport_belt.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Express_transport_belt.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Underground_belt.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Fast_underground_belt.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Express_underground_belt.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Splitter.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="7" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Fast_splitter.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="8" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Express_splitter.png" />
+            </Button>
+            <Button Grid.Row="2" Grid.Column="9" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Burner_inserter.png" />
+            </Button>
+            
 
-            <Button Grid.Row="4" Grid.Column="0" />
-            <Button Grid.Row="4" Grid.Column="1" />
-            <Button Grid.Row="4" Grid.Column="2" />
-            <Button Grid.Row="4" Grid.Column="3" />
-            <Button Grid.Row="4" Grid.Column="4" />
-            <Button Grid.Row="4" Grid.Column="5" />
-            <Button Grid.Row="4" Grid.Column="6" />
+            <Button Grid.Row="3" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Burner_inserter.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Inserter.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Long-handed_inserter.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Fast_inserter.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Filter_inserter.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Stack_inserter.png" />
+            </Button>
+            <Button Grid.Row="3" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Stack_filter_inserter.png" />
+            </Button>
 
-            <Button Grid.Row="5" Grid.Column="0" />
-            <Button Grid.Row="5" Grid.Column="1" />
-            <Button Grid.Row="5" Grid.Column="2" />
-            <Button Grid.Row="5" Grid.Column="3" />
-            <Button Grid.Row="5" Grid.Column="4" />
-            <Button Grid.Row="5" Grid.Column="5" />
-            <Button Grid.Row="5" Grid.Column="6" />
-            <Button Grid.Row="5" Grid.Column="7" />
+            
+            
+            <Button Grid.Row="4" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Small_electric_pole.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Medium_electric_pole.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Big_electric_pole.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Substation.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Pipe.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Pipe_to_ground.png" />
+            </Button>
+            <Button Grid.Row="4" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Pump.png" />
+            </Button>
 
-            <Button Grid.Row="6" Grid.Column="0" />
-            <Button Grid.Row="6" Grid.Column="1" />
-            <Button Grid.Row="6" Grid.Column="2" />
-            <Button Grid.Row="6" Grid.Column="3" />
+            
+            
+            <Button Grid.Row="5" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Straight_rail.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Train_stop.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Rail_signal.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Rail_chain_signal.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Locomotive.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Cargo_wagon.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Fluid_wagon.png" />
+            </Button>
+            <Button Grid.Row="5" Grid.Column="7" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Artillery_wagon.png" />
+            </Button>
 
-            <Button Grid.Row="7" Grid.Column="0" />
-            <Button Grid.Row="7" Grid.Column="1" />
-            <Button Grid.Row="7" Grid.Column="2" />
-            <Button Grid.Row="7" Grid.Column="3" />
-            <Button Grid.Row="7" Grid.Column="4" />
-            <Button Grid.Row="7" Grid.Column="5" />
-            <Button Grid.Row="7" Grid.Column="6" />
-            <Button Grid.Row="7" Grid.Column="7" />
 
-            <Button Grid.Row="8" Grid.Column="0" />
-            <Button Grid.Row="8" Grid.Column="1" />
-            <Button Grid.Row="8" Grid.Column="2" />
-            <Button Grid.Row="8" Grid.Column="3" />
-            <Button Grid.Row="8" Grid.Column="4" />
-            <Button Grid.Row="8" Grid.Column="5" />
-            <Button Grid.Row="8" Grid.Column="6" />
-            <Button Grid.Row="8" Grid.Column="7" />
 
-            <Button Grid.Row="9" Grid.Column="0" />
-            <Button Grid.Row="9" Grid.Column="1" />
-            <Button Grid.Row="9" Grid.Column="2" />
-            <Button Grid.Row="9" Grid.Column="3" />
-            <Button Grid.Row="9" Grid.Column="4" />
-            <Button Grid.Row="9" Grid.Column="5" />
-            <Button Grid.Row="9" Grid.Column="6" />
+            <Button Grid.Row="6" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Car.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Tank.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Spidertron.png" />
+            </Button>
+            <Button Grid.Row="6" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Spidertron_remote.png" />
+            </Button>
+
+
+
+            <Button Grid.Row="7" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Logistic_robot.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Construction_robot.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Active_provider_chest.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Passive_provider_chest.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Storage_chest.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Buffer_chest.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Requester_chest.png" />
+            </Button>
+            <Button Grid.Row="7" Grid.Column="7" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Roboport.png" />
+            </Button>
+
+
+
+            <Button Grid.Row="8" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Lamp.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Red_wire.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Green_wire.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Arithmetic_combinator.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Decider_combinator.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Constant_combinator.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Power_switch.png" />
+            </Button>
+            <Button Grid.Row="8" Grid.Column="7" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Programmable_speaker.png" />
+            </Button>
+
+
+
+            <Button Grid.Row="9" Grid.Column="0" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Stone_brick.png" />
+            </Button>
+            <Button Grid.Row="9" Grid.Column="1" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Concrete.png" />
+            </Button>
+            <Button Grid.Row="9" Grid.Column="2" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Hazard_concrete.png" />
+            </Button>
+            <Button Grid.Row="9" Grid.Column="3" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Refined_concrete.png" />
+            </Button>
+            <Button Grid.Row="9" Grid.Column="4" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Refined_hazard_concrete.png" />
+            </Button>
+            <Button Grid.Row="9" Grid.Column="5" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Landfill.png" />
+            </Button>
+            <Button Grid.Row="9" Grid.Column="6" Margin="1,1,1,1" BorderThickness="0">
+                <Image Source="/Views/RecipeCategories/logistics/48px-Cliff_explosives.png" />
+            </Button>
 
         </Grid>
     </Grid>

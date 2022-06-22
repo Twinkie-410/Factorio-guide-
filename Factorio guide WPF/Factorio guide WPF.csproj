@@ -32,11 +32,13 @@
 
     <ItemGroup>
       <None Remove="Resources\Article\Тестовая статья\RG.png" />
-      <Resource Include="Resources\Article\Тестовая статья\RG.png" />
       <None Remove="Resources\Article\Тестовая статья\Leaf.jpg" />
+      <None Remove="Views\but.png" />
+      <None Remove="Views\RecipeCategories\base\back.png" />
+      <None Remove="Views\RecipeCategories\base\but.png" />
+      <None Remove="Views\RecipeCategories\base\butback.png" />
       <Resource Include="Resources\Article\Тестовая статья\Leaf.jpg" />
       <None Remove="Resources\Article\Тестовая статья\Рисунок2.png" />
-      <Resource Include="Resources\Article\Тестовая статья\Рисунок2.png" />
       <None Remove="Resources\Storeage images\Steel_chest_entity.png" />
       <None Remove="Resources\Storeage images\Iron_chest_entity.png" />
       <None Remove="Resources\Storeage images\Storage_tank_entity.png" />
@@ -57,6 +59,10 @@
       <Resource Include="Resources\Logistics icons\48px-Storage_tank.png" />
       <None Remove="Resources\Product icons\Time.png" />
       <Resource Include="Resources\Product icons\Time.png" />
+      <Resource Include="Views\but.png" />
+      <Resource Include="Views\RecipeCategories\base\back.png" />
+      <Resource Include="Views\RecipeCategories\base\but.png" />
+      <Resource Include="Views\RecipeCategories\base\butback.png" />
     </ItemGroup>
 
     <ItemGroup>
