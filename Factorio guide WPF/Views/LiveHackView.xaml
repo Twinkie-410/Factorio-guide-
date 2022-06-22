@@ -11,9 +11,8 @@
             <ImageBrush ImageSource="/Views/RecipeCategories/base/back.png" />
         </Grid.Background>
         <Grid HorizontalAlignment="Left" VerticalAlignment="Top">
-            <Button Content="Назад" Command="{Binding NavigateMainMenuCommand}"/>
-            <Button>
-                <Image Source="/Views/RecipeCategories/base/butback.png" />
+            <Button Command="{Binding NavigateMainMenuCommand}" BorderThickness="0" Background="{x:Null}">
+                <Image Source="/Views/RecipeCategories/base/butback.png" Height="50" Width="50" />
             </Button>
         </Grid>
         
